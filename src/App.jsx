@@ -1,10 +1,13 @@
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar.jsx'
 import Hero from './components/hero'
 import Card from './components/Card'
 import Cardimg from "./assets/card-img.jpg";
 import Footer from './components/Footer'
 import HotelCard from './components/HotelCard'
 import Hotel1 from "./assets/Hotelimg.jpg";
+import MoreInfo from './components/MoreInfo';
+import AboutImg from "./assets/About_img.jpg";
+import Newsletter from './components/newsletter.jsx'
 
 function App() {
 
@@ -37,10 +40,19 @@ function App() {
           </div>
           <div className='py-8 grid grid-cols-4 gap-6 w-full m-0'>
             {/* Hotel Card component appears here. */}
-            <HotelCard MainImg={Hotel1} hotelName = {"Alpine Grand Resort"} country={"Switzerland"} raiting = {4.5} price = {"£200"}/>
+            <HotelCard MainImg={Hotel1} hotelName={"Alpine Grand Resort"} country={"Switzerland"} raiting={4.5} price={"£200"} />
           </div>
         </div>
+        {/* Create a about us component with general name add it here with proper props */}
+        <MoreInfo
+          title="About Us"
+          desc="At Wanderlust, we believe the true magic of travel lies not just in the places you visit, but in the moments you collect along the way. Our passion is rooted in the spirit of discovery, seeking out hidden corners of the world where stories unfold beyond the edges of the guidebooks. From forgotten coastal towns to winding trails through ancient forests, Wanderlust invites you to experience travel that is personal, soulful, and endlessly inspiring. We are more than a guide; we are your companions in curiosity, crafting journeys that awaken the senses and stir the heart. Wherever your path leads, to distant shores, mountain peaks, or vibrant city streets, Wanderlust is here to help you find beauty in the unexpected and adventure in the everyday. Your next story begins here, and we can't wait to wander it with you."
+          img={AboutImg}
+          btnTxt="Learn More"
+          bgColor="bg-white"
+        />
       </main>
+      <Newsletter />
       <Footer />
     </>
   )
