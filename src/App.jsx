@@ -8,6 +8,9 @@ import Hotel1 from "./assets/Hotelimg.jpg";
 import MoreInfo from './components/MoreInfo';
 import AboutImg from "./assets/About_img.jpg";
 import Newsletter from './components/newsletter.jsx'
+import KyotoImg from "./assets/kyoto.jpg";
+import MachaPeru from "./assets/machu_peru.jpg";
+import amalfiCoast from "./assets/amalfi_coast.jpg";
 
 function App() {
 
@@ -26,9 +29,9 @@ function App() {
           <div className='py-8 grid grid-cols-4 gap-6 w-full m-0'>
             {/* Add card component here with props. */}
             <Card MainImg={Cardimg} city="Santorini" country="Greece" description="Discover the magical sunsets and white-washed buildings of this Greek paradise." />
-            <Card city="Santorini" country="Greece" description="Discover the magical sunsets and white-washed buildings of this Greek paradise." />
-            <Card city="Santorini" country="Greece" description="Discover the magical sunsets and white-washed buildings of this Greek paradise." />
-            <Card city="Santorini" country="Greece" description="Discover the magical sunsets and white-washed buildings of this Greek paradise." />
+            <Card MainImg={KyotoImg} city="Kyoto" country="Japan" description="Experience the perfect blend of traditional culture and modern Japan." />
+            <Card MainImg={MachaPeru} city="Machu Peru" country="Peru" description="Explore the ancient Incan citadel set high in the Andes Mountains." />
+            <Card MainImg={amalfiCoast} city="Amalfi Coast" country="Italy" description="Drive along the stunning Mediterranean coastline of southern Italy." />
           </div>
         </div>
         <div id='Hotels' className='p-8 bg-[#F9FAFB]'>
